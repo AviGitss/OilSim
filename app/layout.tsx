@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+ import type { Metadata } from "next";
 import { DM_Sans, DM_Serif_Display } from "next/font/google";
 import { AuthProvider } from "@/context/AuthContext";
 import "./globals.css";
@@ -18,8 +18,8 @@ const dmSerif = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Crude Availability Simulator — OpenNEtrikkan",
-  description: "Model the probability of crude reaching your CDU gate across 2,000 stochastic Monte Carlo trials.",
+  title: "Crude Availability Simulator — OpenNetrikkan",
+  description: "Model the probability of crude reaching your CDU gate across 2,000 stochastic Monte Carlo trials. Powered by OpenNetrikkan.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
