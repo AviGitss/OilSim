@@ -35,13 +35,16 @@ export default function SimulatorPanel({ user, onRun, initialValues, onBack }: P
 
         {/* Top bar */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "1.5rem", flexWrap: "wrap", gap: 12 }}>
-          <div>
-            <h1 style={{ fontFamily: "var(--font-dm-serif),'DM Serif Display',serif", fontSize: "1.65rem", color: "#0f0e17", lineHeight: 1.2, marginBottom: 4 }}>
-              Crude availability simulator
-            </h1>
-            <p style={{ fontSize: 13, color: "#7a748e" }}>
-              {paramCount} parameters · 2,000 Monte Carlo trials per run
-            </p>
+          <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+            <img src="/logo.jpg" alt="OpenNetrikkan" style={{ height: 28, width: "auto", objectFit: "contain" }} />
+            <div>
+              <h1 style={{ fontFamily: "var(--font-dm-serif),'DM Serif Display',serif", fontSize: "1.65rem", color: "#0f0e17", lineHeight: 1.2, marginBottom: 4 }}>
+                Crude availability simulator
+              </h1>
+              <p style={{ fontSize: 13, color: "#7a748e" }}>
+                {paramCount} parameters · 2,000 Monte Carlo trials per run
+              </p>
+            </div>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             {onBack && (
