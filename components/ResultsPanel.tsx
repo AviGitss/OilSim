@@ -65,13 +65,16 @@ export default function ResultsPanel({ results, params, user, leadId, onBack, on
 
         {/* Header */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "1.5rem", flexWrap: "wrap", gap: 12 }}>
-          <div>
-            <h1 style={{ fontFamily: "var(--font-dm-serif),'DM Serif Display',serif", fontSize: "1.65rem", color: "#0f0e17", lineHeight: 1.2, marginBottom: 4 }}>
-              Simulation results
-            </h1>
-            <p style={{ fontSize: 13, color: "#7a748e" }}>
-              {trials.toLocaleString()} trials · {new Date(ranAt).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}
-            </p>
+          <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+            <img src="/logo.jpg" alt="OpenNetrikkan" style={{ height: 28, width: "auto", objectFit: "contain" }} />
+            <div>
+              <h1 style={{ fontFamily: "var(--font-dm-serif),'DM Serif Display',serif", fontSize: "1.65rem", color: "#0f0e17", lineHeight: 1.2, marginBottom: 4 }}>
+                Simulation results
+              </h1>
+              <p style={{ fontSize: 13, color: "#7a748e" }}>
+                {trials.toLocaleString()} trials · {new Date(ranAt).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}
+              </p>
+            </div>
           </div>
           <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
             {onDashboard && (
@@ -146,7 +149,7 @@ export default function ResultsPanel({ results, params, user, leadId, onBack, on
         </div>
 
         <p style={{ textAlign: "center", fontSize: 12, color: "#7a748e", marginTop: 24 }}>
-          OpenNEtrikkan Technologies · Powered by Monte Carlo simulation ·{" "}
+          OpenNetrikkan Technologies · Powered by Monte Carlo simulation ·{" "}
           <a href="mailto:contact@opennetrikkan.com" style={{ color: "#5b4fcf", textDecoration: "none" }}>
             contact@opennetrikkan.com
           </a>
