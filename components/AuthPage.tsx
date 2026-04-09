@@ -87,6 +87,11 @@ export default function AuthPage() {
     <div style={S.page}>
       <div style={S.wrap}>
         <div style={{ textAlign:"center", marginBottom:"2rem" }}>
+          <img
+            src="/logo.jpg"
+            alt="OpenNetrikkan"
+            style={{ height: 36, width: "auto", objectFit: "contain", marginBottom: 20 }}
+          />
           <span style={S.eyebrow}>Crude Availability Simulator</span>
           <h1 style={S.h1}>
             {mode === "login" ? "Welcome back" : "Create your account"}
@@ -147,7 +152,7 @@ export default function AuthPage() {
         </div>
 
         <p style={S.footer}>
-          OpenNEtrikkan Technologies ·{" "}
+          OpenNetrikkan Technologies ·{" "}
           <a href="mailto:contact@opennetrikkan.com" style={S.link}>contact@opennetrikkan.com</a>
         </p>
       </div>
