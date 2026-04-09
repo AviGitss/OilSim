@@ -246,7 +246,7 @@ export default function AuthPage() {
 
         <p style={S.footer}>
           OpenNetrikkan Technologies ·{" "}
-          <a href="mailto:info@opennetrikkan.com" style={S.link}>contact@opennetrikkan.com</a>
+          <a href="mailto:info@opennetrikkan.com" style={S.link}>info@opennetrikkan.com</a>
         </p>
       </div>
     </div>
