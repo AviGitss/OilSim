@@ -87,14 +87,16 @@ export default function AuthPage() {
     <div style={S.page}>
       <div style={S.wrap}>
         <div style={{ textAlign:"center", marginBottom:"2rem" }}>
-          <img
-            src="/logo.jpg"
-            alt="OpenNetrikkan"
-            style={{ height: 36, width: "auto", objectFit: "contain", marginBottom: 20 }}
-          />
+          <div style={{ display:"flex", justifyContent:"center", marginBottom:20 }}>
+            <img
+              src="/logo.jpg"
+              alt="OpenNetrikkan"
+              style={{ height: 44, width: "auto", objectFit: "contain" }}
+            />
+          </div>
           <span style={S.eyebrow}>Crude Availability Simulator</span>
           <h1 style={S.h1}>
-            {mode === "login" ? "Welcome back" : "Create your account"}
+            {mode === "login" ? "OilSim" : "Create your account"}
           </h1>
           <p style={S.sub}>
             {mode === "login"
