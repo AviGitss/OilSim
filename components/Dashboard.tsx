@@ -95,7 +95,11 @@ export default function Dashboard({ onNewRun, onLoadRun }: Props) {
     <div style={S.page}>
       {/* Top nav */}
       <div style={S.header}>
-        <span style={S.brand}>OpenNEtrikkan</span>
+        <img
+          src="/logo.jpg"
+          alt="OpenNetrikkan"
+          style={{ height: 32, width: "auto", objectFit: "contain" }}
+        />
         <div style={S.headerRight}>
           <button className="btn-primary" style={{ padding:"7px 16px", fontSize:13 }} onClick={onNewRun}>
             + New simulation
