@@ -74,7 +74,7 @@ export default function Home() {
           {/* About this demo */}
           <div style={{ background:"rgba(255,255,255,0.97)", borderRadius:16, border:"1px solid rgba(221,214,254,0.5)", padding:"1.5rem", marginBottom:20, boxShadow:"0 2px 20px rgba(91,79,207,0.06)" }}>
             <p style={{ fontSize:13, fontWeight:600, color:C.acc, textTransform:"uppercase" as const, letterSpacing:"0.07em", marginBottom:12 }}>
-              About this demo
+              Oil block to your refinery - simulate the availability
             </p>
             <p style={{ fontSize:14.5, color:C.ink2, lineHeight:1.75, marginBottom:14 }}>
               OilSim is a Monte Carlo simulation engine that models the probability of crude oil
